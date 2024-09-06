@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="Title">
+            <h1>Lavina4400</h1>
+            <h2>Hlavnya Tamas Design</h2>
+        </div>
+
+        <div class="vid">
+            <video  autoplay muted loop>
+                <source src="video_1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <header class="header">
+            <nav class="navbar">
+                <a href="#celtDiv">bejelentkezés</a>
+                <a href="#">regisztráció</a>
+                <a href="#">kezdőlap</a>
+                <a href="#">rólunk</a>
+                <a href="#">kapcsolat</a>
+            </nav>
+        </header>
+        <div class="block">
+        <div class="content">
+            <div class="imag">
+                <img src="image1.jpg">
+            </div>
+            <div class="sentences">
+            <p>Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+            </p>
+        </div>
+        </div>
+
+        <div class="content">
+            <div class="sentences">
+            <p>Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+            </p>
+        </div>
+            <div class="imag">
+                <img src="image2.jpg">
+                <img src="image2.jpg">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="imag">
+                <img src="image3.jpg">
+                <img src="image3.jpg">
+            </div>
+            <div class="sentences">
+            <p>Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+                >Ez itt az első div szövege. Ez egy példa szöveg, amely négy mondatból áll. Ezt a szöveget tetszőlegesen bővítheted. A cél a formázás bemutatása.
+            </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="wrapper">
+        <div class="images">
+          <div class="img-1"></div>
+          <div class="img-2"></div>
+        </div>
+        <div class="slider">
+          <div class="drag-line">
+            <span></span>
+          </div>
+          <input type="range" min="0" max="100" value="50">
+        </div>
+      </div>
+      
+  
+      <script>
+        const slider = document.querySelector(".slider input");
+        const img = document.querySelector(".images .img-2");
+        const dragLine = document.querySelector(".slider .drag-line");
+        slider.oninput = ()=>{
+          let sliderVal = slider.value;
+          dragLine.style.left = sliderVal + "%";
+          img.style.width = sliderVal + "%";
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault(); // Megakadályozza az alapértelmezett görgetést
+
+                // Az animált görgetés meghívása
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth', // Simított animáció
+                    block: 'start' // A célzott elem tetejére görget
+                });
+            });
+        });
+
+
+
+      </script>
+
+
+
+
+      <p id="celtDiv">ide ugorj</p>
+
+    </div> 
+
+
+    
+
+
+
+
+</body>
+</html>
